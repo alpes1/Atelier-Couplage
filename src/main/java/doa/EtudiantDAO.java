@@ -1,7 +1,7 @@
 package doa;
 import java.util.*;
 public class EtudiantDAO {
-    List<Etudiant> etudiants = new ArrayList<>();
+    private List<Etudiant> etudiants = new ArrayList<>();
 
     public EtudiantDAO(List<Etudiant> etudiants) {
         this.etudiants = etudiants;
@@ -16,4 +16,8 @@ public class EtudiantDAO {
         etudiants.add(etd);
         return etd ;
     }
+public List<Etudiant> getallEtudiant(){
+        return etudiants ;
+}
+
 }
